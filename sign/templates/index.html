@@ -1,0 +1,13 @@
+<!-- <h1>           Welcom to World of DEMON     </h1>
+<form action="">
+<input type="Submit" value="Signin" ><a href="signin.html" >Signin</a>
+</form>
+<input type="Submit" value="Signup"> -->
+
+
+
+<form method="POST" action="">
+    {% csrf_token %}
+    {{forms.as_p}}
+    <button type="submit">Sign up</button>
+</form>     
